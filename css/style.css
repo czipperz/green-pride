@@ -83,7 +83,7 @@ Primary Dark #00600f
     position: relative;
     top: 0;
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     max-height: 400px;
     overflow: hidden;
 }
