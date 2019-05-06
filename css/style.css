@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    min-width: 330px;
 }
 
 /*
@@ -75,7 +76,11 @@ Primary Dark #00600f
     position: relative;
 }
 
-#maincard #cardtop .imgdiv {
+#maincard #cardtop #cardtopimg {
+    background-image: url(res/HomeBackground.png);
+    background-size: cover;
+    background-position-y: 20%;
+
     position: relative;
     top: 0;
     max-width: 100%;
@@ -83,11 +88,12 @@ Primary Dark #00600f
     max-height: 400px;
     overflow: hidden;
 }
-#maincard #cardtop .imgdiv > img {
+#maincard #cardtop #cardtopimg > img {
+    border-radius: 10px 10px 0 0;
     max-width: 100%;
 }
 
-#maincard #cardtop > div {
+#maincard #cardtop .textdiv {
     display: block;
     position: absolute;
     top: 14px;
@@ -117,6 +123,7 @@ Primary Dark #00600f
 
 #maincard #rest {
     padding: 15px;
+    padding-top: 0;
 }
 
 #maincard h2 {
